@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <!-- <script src="./sayHi.js" defer ></script> -->
     <script type="module" src="./main.js" defer  ></script>
     
     <title>Weather</title>
 </head>
 <body>
-    <form action="weather">
-
+    <form>
+        <input type="text" name="city" placeholder="Enter city name">
+        <button type="submit">Get Weather</button>
     </form>
+
+    <article id="weatherContainer"></article>
     
     
 </body>
