@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit", (e) => {
 e.preventDefault();
 
-let API_KEY = 6ff1093c34249bf39ca11651ec53e460;
+let API_KEY = weatherBaha;
 
 let city = e.target.elements.city.value;
 
@@ -16,7 +16,7 @@ fetch(url).then((response) =>response.json())
     let windSpeed = data.wind.speed;
 
     let text = `The weather in ${cityName} is ${temperature} <sup>o</sup>C , wind speed is ${windSpeed}, pressure is ${pressure}, and humidity is ${humidity}`;
-    document.querySelector("article").innerHTML = text;
+    document.querySelector("#weatherContainer").innerHTML = text;
 })
 .catch(error => console.error(error));
 });
