@@ -1,1 +1,2 @@
-greeting('hasan');
+import {greeting} from './sayHi.js';
+greeting("hasan");
