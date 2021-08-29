@@ -1,1 +1,1 @@
-import { greeting } from './sayHi'
+greeting('hasan');
