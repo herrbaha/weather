@@ -1,7 +1,7 @@
 document.querySelector("form").addEventListener("submit", (e) => {
 e.preventDefault();
 
-let API_KEY = weatherBaha;
+let API_KEY = "03eca12fc063192fc55adf45336b2248";
 
 let city = e.target.elements.city.value;
 
